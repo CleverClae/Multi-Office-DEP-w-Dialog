@@ -14,29 +14,42 @@ Based on: Adam Codega (@adamcodega)'s https://github.com/acodega/dialog-scripts/
 # HISTORY
 
 Version 0.0.1, 19-Mar-2022, Dan K. Snelson (@dan-snelson)
-   		Original version
+   		
+		Original version
 
 Version 0.0.2, 20-Mar-2022, Dan K. Snelson (@dan-snelson)
-   		Corrected initial indeterminate progress bar. (Thanks, @bartreardon!)
+   		
+		Corrected initial indeterminate progress bar. (Thanks, @bartreardon!)
 
 Version 0.0.3, 21-Mar-2022, Dan K. Snelson (@dan-snelson)
-   		Re-corrected initial indeterminate progress bar.
+   		
+		Re-corrected initial indeterminate progress bar.
 
 Version 0.0.4, 16-Apr-2022, Dan K. Snelson (@dan-snelson)
-   		Updated for Listview processing https://github.com/bartreardon/swiftDialog/pull/103
-   		Added dynamic, policy-based icons
+   		
+		Updated for Listview processing https://github.com/bartreardon/swiftDialog/pull/103
+   		
+		Added dynamic, policy-based icons
 
 Version 0.0.5, 21-Apr-2022, Dan K. Snelson (@dan-snelson)
-   		Standardized references to listitem code to more easily leverage statustext
-   		Simplified "jamf policy -event" code
+   		
+		Standardized references to listitem code to more easily leverage statustext
+   		
+		Simplified "jamf policy -event" code
 
 Version 0.0.6, 22-Apr-2022, Dan K. Snelson (@dan-snelson)
-   		Added error-checking to appCheck (thanks for the idea, @@adamcodega!)
+   		
+		Added error-checking to appCheck (thanks for the idea, @@adamcodega!)
 
 Version 0.1.1, 6-June-2022, Clayton Council (NYC-IHC)
-		- Customized for FCB Health (IHC-All)
-		- Added base64 Image function to tmp folder
-		- Message Dialog and Preferences
-		- Used a Dropdown to select the specific Site
-    		- The application array is specific to each Site
+		
+		Customized for FCB Health (IHC-All)
+		
+		Added base64 Image function to tmp folder
+		
+		Message Dialog and Preferences
+		
+		Used a Dropdown to select the specific Site
+    		
+		The application array is specific to each Site
 
