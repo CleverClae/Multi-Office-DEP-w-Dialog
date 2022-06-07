@@ -34,7 +34,7 @@ Version 0.0.6, 22-Apr-2022, Dan K. Snelson (@dan-snelson)
    		Added error-checking to appCheck (thanks for the idea, @@adamcodega!)
 
 Version 0.1.1, 6-June-2022, Clayton Council (NYC-IHC)
-	Customized for FCB Health (IHC-All)
+		- Customized for FCB Health (IHC-All)
 		- Added base64 Image function to tmp folder
 		- Message Dialog and Preferences
 		- Used a Dropdown to select the specific Site
