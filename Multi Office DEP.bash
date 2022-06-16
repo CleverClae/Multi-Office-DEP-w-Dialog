@@ -134,7 +134,6 @@ apps=(
 	"FCB Templates|/Users/"${currentUser}"/Library/Group Containers/UBF8T346G9.Office/User Content.localized|NYC-FHC-FCBTEMPLATES|1fd01cb7e49863d8987a4a93904ba3c196c109f6f47a3df109fb16fa8ce6cee1"
 	
 )
-
 NYCARTapp=(
 	"Global Protect|/Applications/GlobalProtect.app|NYC-ART-Install_GlobalProtectVPN5210|27586f39b50ba6722b5abff7dce6e4c0b10b5051e13eb710407f885cdf346f8a"
 	"Google Chrome|/Applications/Google Chrome.app|NYC-ART-Install-Chrome|9fa3f95e040d299a5fad28bb0d6c57a528bb8f0c9e775b0ecb830db5520e6d96"
@@ -153,7 +152,6 @@ NYCARTapp=(
     "FCB Fonts|/Library/Fonts/Rockwell.ttf|NYC-ART-FONTS|010c77e70d7c8d33a47e100b5eb62cad0dd293f0f98147c9c48e246ce652a651"
 	"FCB Templates|/Users/"${currentUser}"/Library/Group Containers/UBF8T346G9.Office/User Content.localized|NYC-ART-FCBTEMPLATES|1fd01cb7e49863d8987a4a93904ba3c196c109f6f47a3df109fb16fa8ce6cee1"
 )
-
 NYCSRXapp=(
 	"Global Protect|/Applications/GlobalProtect.app|NYC-FHC-Install_GlobalProtectVPN5210|27586f39b50ba6722b5abff7dce6e4c0b10b5051e13eb710407f885cdf346f8a"
 	"Google Chrome|/Applications/Google Chrome.app|NYC-FHC-Install-Chrome|9fa3f95e040d299a5fad28bb0d6c57a528bb8f0c9e775b0ecb830db5520e6d96"
@@ -166,7 +164,6 @@ NYCSRXapp=(
 	"Teamviewer|/Applications/TeamViewerHost.app|NYC-FHC-teamviewer|117f2cd110bdc3e536cfa15679700fb6eb54c01306c0feeedea7064f82bb3a82"
 	### ADD FCB TEMPLATES ### NEED FILE LOCATION FOR APP CHECK FUNCTION ######
 )
-
 NYCNEOapp=(
     "Global Protect|/Applications/GlobalProtect.app|NYC-NEO-vpn|27586f39b50ba6722b5abff7dce6e4c0b10b5051e13eb710407f885cdf346f8a"
 	"Google Chrome|/Applications/Google Chrome.app|NYC-NEO-chrome|9fa3f95e040d299a5fad28bb0d6c57a528bb8f0c9e775b0ecb830db5520e6d96"
@@ -182,7 +179,6 @@ NYCNEOapp=(
     "FCB Fonts|/Library/Fonts/Rockwell.ttf|NYC-NEO-fonts|010c77e70d7c8d33a47e100b5eb62cad0dd293f0f98147c9c48e246ce652a651"
 	"FCB Templates|/Users/"${currentUser}"/Library/Group Containers/UBF8T346G9.Office/User Content.localized|NYC-NEO-FCBTEMPLATES|1fd01cb7e49863d8987a4a93904ba3c196c109f6f47a3df109fb16fa8ce6cee1"
 )
-
 PPYFCRapp=(
 	"Global Protect|/Applications/GlobalProtect.app|vpn|27586f39b50ba6722b5abff7dce6e4c0b10b5051e13eb710407f885cdf346f8a"
 	"Google Chrome|/Applications/Google Chrome.app|chrome|9fa3f95e040d299a5fad28bb0d6c57a528bb8f0c9e775b0ecb830db5520e6d96"
@@ -198,7 +194,6 @@ PPYFCRapp=(
     "FCB Fonts|/Library/Fonts/Rockwell.ttf|fonts|010c77e70d7c8d33a47e100b5eb62cad0dd293f0f98147c9c48e246ce652a651"
 	"FCB Templates|/Users/"${currentUser}"/Library/Group Containers/UBF8T346G9.Office/User Content.localized|FCBTEMPLATES|1fd01cb7e49863d8987a4a93904ba3c196c109f6f47a3df109fb16fa8ce6cee1"
 )
-
 GBRIHCapp=(
 	"Global Protect|/Applications/GlobalProtect.app|NYC-FHC-Install_GlobalProtectVPN5210|27586f39b50ba6722b5abff7dce6e4c0b10b5051e13eb710407f885cdf346f8a"
 	"Google Chrome|/Applications/Google Chrome.app|NYC-FHC-Install-Chrome|9fa3f95e040d299a5fad28bb0d6c57a528bb8f0c9e775b0ecb830db5520e6d96"
