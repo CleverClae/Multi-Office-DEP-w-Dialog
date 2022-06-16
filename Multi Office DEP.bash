@@ -130,7 +130,6 @@ apps=(
 	"Teamviewer|/Applications/TeamViewerHost.app|NYC-FHC-teamviewer|117f2cd110bdc3e536cfa15679700fb6eb54c01306c0feeedea7064f82bb3a82"
     "SafeQ 6|/Applications/Xerox PowerENGAGE.app|NYC-FHC-Safeq|6e3576dc7c9839246ac66380898d03b2d310d639e24e60202de4bd0f9e1f3326"
     "FCB Servers|/Applications/FCB Servers|NYC-FHC-fcbservers|d8b04640d60be03ea939dbbce9a175505f5a73ac216dbe94d62cbaf37fb1a389"
-    "SMB Share Fast|/Library/LaunchAgents/com.fcb.SharedService.plist|NYC-FHC-SMBSHAREFAST|ee63372f865e92991ef97a53889d4028f8ed79e97324557838501b1307383d14"
     "FCB Fonts|/Library/Fonts/Rockwell.ttf|NYC-FHC-fonts|010c77e70d7c8d33a47e100b5eb62cad0dd293f0f98147c9c48e246ce652a651"
 	"FCB Templates|/Users/"${currentUser}"/Library/Group Containers/UBF8T346G9.Office/User Content.localized|NYC-FHC-FCBTEMPLATES|1fd01cb7e49863d8987a4a93904ba3c196c109f6f47a3df109fb16fa8ce6cee1"
 	
@@ -139,17 +138,19 @@ apps=(
 NYCARTapp=(
 	"Global Protect|/Applications/GlobalProtect.app|NYC-ART-Install_GlobalProtectVPN5210|27586f39b50ba6722b5abff7dce6e4c0b10b5051e13eb710407f885cdf346f8a"
 	"Google Chrome|/Applications/Google Chrome.app|NYC-ART-Install-Chrome|9fa3f95e040d299a5fad28bb0d6c57a528bb8f0c9e775b0ecb830db5520e6d96"
-	"Adobe Creative Cloud 2022|/Applications/Adobe XD/Adobe XD.app|NYC-ART-Creative-Universal|4f9a4f79d648e6a1850137e0444be39d8c17974dcfbbc370d41d4ffcd04926cc"
-	"Microsoft Edge|/Applications/Microsoft Edge.app|NYC-ART-Install-MSEdge|98d4083f89e73d57866a6c790319050618d3fefbf851d0bc138ac9b4a55c67f7"
+	"Adobe Creative Cloud 2022|/Applications/Adobe XD/Adobe XD.app|NYC-ART-Creative|4f9a4f79d648e6a1850137e0444be39d8c17974dcfbbc370d41d4ffcd04926cc"
+	"Microsoft Edge|/Applications/Microsoft Edge.app|NYC-ART-Install_MSEdge|98d4083f89e73d57866a6c790319050618d3fefbf851d0bc138ac9b4a55c67f7"
 	"Microsoft Office 365|/Applications/Microsoft Teams.app|NYC-ART-Install-Microsoft-Office-Business-Pro|87f928080750588fa45de036f09fabc907da65cf021b7ac4a3d2f037bda3568f"
-	"Zoom|/Applications/zoom.us.app|NYC-ART Install_Zoom|90b660d090af165e0169f8ea56b65537c09aedac635aec93896fdba9bdb4924a"
+	"Zoom|/Applications/zoom.us.app|NYC-ART Install-Zoom|90b660d090af165e0169f8ea56b65537c09aedac635aec93896fdba9bdb4924a"
 	"Universal Type Client|/Applications/Universal Type Client.app|NYC-ART-UTC|332afa05a467635545d1af7cf9cdfa3f680fb620b23ba5f1900412de08b8c2c2"
+	"Cysco Webex|/Applications/Webex.app|NYC-ART-Webex|0ff8a500918b6798752e6819ec764d4f8e6c6ddff595ba0b648ace05639a235c"
 	"VLC Player|/Applications/VLC.app|NYC-ART-Install-VLC|c046a7faca2942b2826d24a7b03caefd775bd4c8aab6ce6fc9e714718d62cb63"
+	"Easyfind|/Applications/Easyfind.app|NYC-ART-EasyFind|644e9f362a770d5803f387e0a8abcf29906d0865764d5c46fac0cd178adabc2b"
+	"Cyberduck|/Applications/Cyberduck.app|NYC-ART-enrollCyberduck|61938002cdb959d27df2ac6307597068592902558437e05026528c39a750ea7e"
 	"Teamviewer|/Applications/TeamViewerHost.app|NYC-ART-teamviewer|117f2cd110bdc3e536cfa15679700fb6eb54c01306c0feeedea7064f82bb3a82"
-    "SafeQ 6|/Applications/Xerox PowerENGAGE.app|,NYC-ART-Safeq6|6e3576dc7c9839246ac66380898d03b2d310d639e24e60202de4bd0f9e1f3326"
+    "SafeQ 6|/Applications/Xerox PowerENGAGE.app|NYC-ART-Safeq6|6e3576dc7c9839246ac66380898d03b2d310d639e24e60202de4bd0f9e1f3326"
     "FCB Servers|/Applications/FCB Servers|NYC-ART-fcbservers|d8b04640d60be03ea939dbbce9a175505f5a73ac216dbe94d62cbaf37fb1a389"
-    "SMB Share Fast|/Library/LaunchAgents/com.fcb.SharedService.plist|NYC-ART-SMBSHAREFAST|ee63372f865e92991ef97a53889d4028f8ed79e97324557838501b1307383d14"
-    "FCB Fonts|/Library/Fonts/Rockwell.ttf|NYC-ART-fonts|010c77e70d7c8d33a47e100b5eb62cad0dd293f0f98147c9c48e246ce652a651"
+    "FCB Fonts|/Library/Fonts/Rockwell.ttf|NYC-ART-FONTS|010c77e70d7c8d33a47e100b5eb62cad0dd293f0f98147c9c48e246ce652a651"
 	"FCB Templates|/Users/"${currentUser}"/Library/Group Containers/UBF8T346G9.Office/User Content.localized|NYC-ART-FCBTEMPLATES|1fd01cb7e49863d8987a4a93904ba3c196c109f6f47a3df109fb16fa8ce6cee1"
 )
 
@@ -167,29 +168,35 @@ NYCSRXapp=(
 )
 
 NYCNEOapp=(
-	"Global Protect|/Applications/GlobalProtect.app|NYC-FHC-Install_GlobalProtectVPN5210|27586f39b50ba6722b5abff7dce6e4c0b10b5051e13eb710407f885cdf346f8a"
-	"Google Chrome|/Applications/Google Chrome.app|NYC-FHC-Install-Chrome|9fa3f95e040d299a5fad28bb0d6c57a528bb8f0c9e775b0ecb830db5520e6d96"
-	"Adobe Creative Cloud 2022|/Applications/Adobe XD/Adobe XD.app|NYC-FHC-Creative-Cloud|4f9a4f79d648e6a1850137e0444be39d8c17974dcfbbc370d41d4ffcd04926cc"
-	"Microsoft Edge|/Applications/Microsoft Edge.app|NYC-FHC-Install_MSEdge|98d4083f89e73d57866a6c790319050618d3fefbf851d0bc138ac9b4a55c67f7"
-	"Microsoft Office 365|/Applications/Microsoft Teams.app|NYC-FHC-Install-Microsoft-Office|87f928080750588fa45de036f09fabc907da65cf021b7ac4a3d2f037bda3568f"
-	"Zoom|/Applications/zoom.us.app|NYC-FHC-Install_Zoom|90b660d090af165e0169f8ea56b65537c09aedac635aec93896fdba9bdb4924a"
-	"Universal Type Client|/Applications/Universal Type Client.app|NYC-FHC-UTC|332afa05a467635545d1af7cf9cdfa3f680fb620b23ba5f1900412de08b8c2c2"
-	"VLC Player|/Applications/VLC.app|NYC-FHC-Install-VLC|c046a7faca2942b2826d24a7b03caefd775bd4c8aab6ce6fc9e714718d62cb63"
-	"Teamviewer|/Applications/TeamViewerHost.app|NYC-FHC-teamviewer|117f2cd110bdc3e536cfa15679700fb6eb54c01306c0feeedea7064f82bb3a82"
-	### ADD FCB TEMPLATES ### NEED FILE LOCATION FOR APP CHECK FUNCTION ######
+    "Global Protect|/Applications/GlobalProtect.app|NYC-NEO-vpn|27586f39b50ba6722b5abff7dce6e4c0b10b5051e13eb710407f885cdf346f8a"
+	"Google Chrome|/Applications/Google Chrome.app|NYC-NEO-chrome|9fa3f95e040d299a5fad28bb0d6c57a528bb8f0c9e775b0ecb830db5520e6d96"
+	"Adobe Creative Cloud 2022|/Applications/Adobe XD/Adobe XD.app|NYC-NEO-Creative-Cloud|4f9a4f79d648e6a1850137e0444be39d8c17974dcfbbc370d41d4ffcd04926cc"
+	"Mozilla Firefox|/Applications/Firefox.app|NYC-NEO-Firefox|89ea09fda1e076eb5af72648ff8c93dda4f1d19a4c733e11c4cc7440e41fb85a"
+	"Microsoft Office 365|/Applications/Microsoft Teams.app|NYC-NEO-Microsoft-Business-Pro|87f928080750588fa45de036f09fabc907da65cf021b7ac4a3d2f037bda3568f"
+	"Zoom|/Applications/zoom.us.app|NYC-NEO-zoom|90b660d090af165e0169f8ea56b65537c09aedac635aec93896fdba9bdb4924a"
+	"Universal Type Client|/Applications/Universal Type Client.app|NYC-NEO-UTC|332afa05a467635545d1af7cf9cdfa3f680fb620b23ba5f1900412de08b8c2c2"
+	"VLC Player|/Applications/VLC.app|NYC-NEO-vlc|c046a7faca2942b2826d24a7b03caefd775bd4c8aab6ce6fc9e714718d62cb63"
+	"Teamviewer|/Applications/TeamViewerHost.app|NYC-NEO-TeamViewer|117f2cd110bdc3e536cfa15679700fb6eb54c01306c0feeedea7064f82bb3a82"
+    "SafeQ 6|/Applications/Xerox PowerENGAGE.app|NYC-NEO-Safeq|6e3576dc7c9839246ac66380898d03b2d310d639e24e60202de4bd0f9e1f3326"
+    "FCB Servers|/Applications/FCB Servers|NYC-NEO-fcbservers|d8b04640d60be03ea939dbbce9a175505f5a73ac216dbe94d62cbaf37fb1a389"
+    "FCB Fonts|/Library/Fonts/Rockwell.ttf|NYC-NEO-fonts|010c77e70d7c8d33a47e100b5eb62cad0dd293f0f98147c9c48e246ce652a651"
+	"FCB Templates|/Users/"${currentUser}"/Library/Group Containers/UBF8T346G9.Office/User Content.localized|NYC-NEO-FCBTEMPLATES|1fd01cb7e49863d8987a4a93904ba3c196c109f6f47a3df109fb16fa8ce6cee1"
 )
 
 PPYFCRapp=(
-	"Global Protect|/Applications/GlobalProtect.app|NYC-FHC-Install_GlobalProtectVPN5210|27586f39b50ba6722b5abff7dce6e4c0b10b5051e13eb710407f885cdf346f8a"
-	"Google Chrome|/Applications/Google Chrome.app|NYC-FHC-Install-Chrome|9fa3f95e040d299a5fad28bb0d6c57a528bb8f0c9e775b0ecb830db5520e6d96"
-	"Adobe Creative Cloud 2022|/Applications/Adobe XD/Adobe XD.app|NYC-FHC-Creative-Cloud|4f9a4f79d648e6a1850137e0444be39d8c17974dcfbbc370d41d4ffcd04926cc"
-	"Microsoft Edge|/Applications/Microsoft Edge.app|NYC-FHC-Install_MSEdge|98d4083f89e73d57866a6c790319050618d3fefbf851d0bc138ac9b4a55c67f7"
-	"Microsoft Office 365|/Applications/Microsoft Teams.app|NYC-FHC-Install-Microsoft-Office|87f928080750588fa45de036f09fabc907da65cf021b7ac4a3d2f037bda3568f"
-	"Zoom|/Applications/zoom.us.app|NYC-FHC-Install_Zoom|90b660d090af165e0169f8ea56b65537c09aedac635aec93896fdba9bdb4924a"
-	"Universal Type Client|/Applications/Universal Type Client.app|NYC-FHC-UTC|332afa05a467635545d1af7cf9cdfa3f680fb620b23ba5f1900412de08b8c2c2"
-	"VLC Player|/Applications/VLC.app|NYC-FHC-Install-VLC|c046a7faca2942b2826d24a7b03caefd775bd4c8aab6ce6fc9e714718d62cb63"
-	"Teamviewer|/Applications/TeamViewerHost.app|NYC-FHC-teamviewer|117f2cd110bdc3e536cfa15679700fb6eb54c01306c0feeedea7064f82bb3a82"
-	### ADD FCB TEMPLATES ### NEED FILE LOCATION FOR APP CHECK FUNCTION ######
+	"Global Protect|/Applications/GlobalProtect.app|vpn|27586f39b50ba6722b5abff7dce6e4c0b10b5051e13eb710407f885cdf346f8a"
+	"Google Chrome|/Applications/Google Chrome.app|chrome|9fa3f95e040d299a5fad28bb0d6c57a528bb8f0c9e775b0ecb830db5520e6d96"
+	"Adobe Creative Cloud 2022|/Applications/Adobe XD/Adobe XD.app|PPY-FCR-Creative-Cloud|4f9a4f79d648e6a1850137e0444be39d8c17974dcfbbc370d41d4ffcd04926cc"
+	"Mozilla Firefox|/Applications/Firefox.app|firefox|89ea09fda1e076eb5af72648ff8c93dda4f1d19a4c733e11c4cc7440e41fb85a"
+	"Microsoft Office 365|/Applications/Microsoft Teams.app|Office365|87f928080750588fa45de036f09fabc907da65cf021b7ac4a3d2f037bda3568f"
+	"Zoom|/Applications/zoom.us.app|zoom|90b660d090af165e0169f8ea56b65537c09aedac635aec93896fdba9bdb4924a"
+	"Universal Type Client|/Applications/Universal Type Client.app|UTC|332afa05a467635545d1af7cf9cdfa3f680fb620b23ba5f1900412de08b8c2c2"
+	"VLC Player|/Applications/VLC.app|vlc|c046a7faca2942b2826d24a7b03caefd775bd4c8aab6ce6fc9e714718d62cb63"
+	"Teamviewer|/Applications/TeamViewerHost.app|TeamViewer|117f2cd110bdc3e536cfa15679700fb6eb54c01306c0feeedea7064f82bb3a82"
+    "SafeQ 6|/Applications/Xerox PowerENGAGE.app|Safeq|6e3576dc7c9839246ac66380898d03b2d310d639e24e60202de4bd0f9e1f3326"
+    "FCB Servers|/Applications/FCB Servers|fcbservers|d8b04640d60be03ea939dbbce9a175505f5a73ac216dbe94d62cbaf37fb1a389"
+    "FCB Fonts|/Library/Fonts/Rockwell.ttf|fonts|010c77e70d7c8d33a47e100b5eb62cad0dd293f0f98147c9c48e246ce652a651"
+	"FCB Templates|/Users/"${currentUser}"/Library/Group Containers/UBF8T346G9.Office/User Content.localized|FCBTEMPLATES|1fd01cb7e49863d8987a4a93904ba3c196c109f6f47a3df109fb16fa8ce6cee1"
 )
 
 GBRIHCapp=(
@@ -203,6 +210,15 @@ GBRIHCapp=(
 	"VLC Player|/Applications/VLC.app|NYC-FHC-Install-VLC|c046a7faca2942b2826d24a7b03caefd775bd4c8aab6ce6fc9e714718d62cb63"
 	"Teamviewer|/Applications/TeamViewerHost.app|NYC-FHC-teamviewer|117f2cd110bdc3e536cfa15679700fb6eb54c01306c0feeedea7064f82bb3a82"
 	### ADD FCB TEMPLATES ### NEED FILE LOCATION FOR APP CHECK FUNCTION ######
+)
+USAMHNJapps=(
+	"Global Protect|/Applications/GlobalProtect.app|USA-MHNJ-Install-GlobalProtectVPN|27586f39b50ba6722b5abff7dce6e4c0b10b5051e13eb710407f885cdf346f8a"  
+	"Adobe Creative Cloud 2022|/Applications/Adobe XD/Adobe XD.app|USA-MHNJ-Install-CCDesktopApp|4f9a4f79d648e6a1850137e0444be39d8c17974dcfbbc370d41d4ffcd04926cc"
+	"Microsoft Office 365|/Applications/Microsoft Teams.app|USA-MHNJ-Install-Microsoft-Office-Business-Pro|87f928080750588fa45de036f09fabc907da65cf021b7ac4a3d2f037bda3568f"
+	"Zoom|/Applications/zoom.us.app|USA-MHNJ-Install_Zoom|90b660d090af165e0169f8ea56b65537c09aedac635aec93896fdba9bdb4924a"
+	"Universal Type Client|/Applications/Universal Type Client.app|USA-MHNJ-Install-UTC|332afa05a467635545d1af7cf9cdfa3f680fb620b23ba5f1900412de08b8c2c2"
+	"VLC Player|/Applications/VLC.app|USA-MHNJ-Install-VLC|c046a7faca2942b2826d24a7b03caefd775bd4c8aab6ce6fc9e714718d62cb63"
+	"Teamviewer|/Applications/TeamViewerHost.app|USA-MHNJ-Install_teamviewerqs|117f2cd110bdc3e536cfa15679700fb6eb54c01306c0feeedea7064f82bb3a82"
 )
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
@@ -245,6 +261,12 @@ Please be patient...
 "
 
 GBRIHCMESSAGE="Starting Image Proccess for GBR-IHC 
+
+This Proccess can take anywhere from 35 - 45 min to complete
+
+Please be patient...
+"
+USAMHNJMESSAGE="Starting Image Proccess for USA-MHNJ 
 
 This Proccess can take anywhere from 35 - 45 min to complete
 
@@ -297,6 +319,43 @@ function finalise(){
   exit 0
 }
 
+
+function finaliseNYCART(){
+  dialog_command "icon: SF=checkmark.circle.fill,weight=bold,colour1=#00ff44,colour2=#075c1e"
+  dialog_command "progresstext: Installation of applications complete."
+  sleep 5
+  dialog_command "icon: https://ics.services.jamfcloud.com/icon/hash_90958d0e1f8f8287a86a1198d21cded84eeea44886df2b3357d909fe2e6f1296"
+  dialog_command "progresstext: Proccessing final configurations…"
+  $JAMFCOMMAND NYC-ART-SMBSHAREFAST
+  $JAMFCOMMAND NYC-ART-enrollJava8
+  $JAMFCOMMAND NYC-ART-enrollJDK8
+  $JAMFCOMMAND NYC-ART-enrolldock
+  $JAMFCOMMAND CheckIn
+  dialog_command "icon: SF=checkmark.seal.fill,weight=bold,colour1=#00ff44,colour2=#075c1e"
+  dialog_command "progresstext: Complete"
+  dialog_command "progress: complete"
+  dialog_command "button1text: Done"
+  dialog_command "button1: enable"
+  exit 0
+}
+
+function finalisePPYFCR(){
+  dialog_command "icon: SF=checkmark.circle.fill,weight=bold,colour1=#00ff44,colour2=#075c1e"
+  dialog_command "progresstext: Installation of applications complete."
+  sleep 5
+  dialog_command "icon: https://ics.services.jamfcloud.com/icon/hash_90958d0e1f8f8287a86a1198d21cded84eeea44886df2b3357d909fe2e6f1296"
+  dialog_command "progresstext: Proccessing final configurations ……"
+  $JAMFCOMMAND smbfix
+  $JAMFCOMMAND config
+  $JAMFCOMMAND name
+  $JAMFCOMMAND CheckIn
+  dialog_command "icon: SF=checkmark.seal.fill,weight=bold,colour1=#00ff44,colour2=#075c1e"
+  dialog_command "progresstext: Complete"
+  dialog_command "progress: complete"
+  dialog_command "button1text: Done"
+  dialog_command "button1: enable"
+  exit 0
+}
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # Check for app installation
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
@@ -346,12 +405,20 @@ function PPYFCRappCheck(){
     dialog_command "progress: increment"
 }
 
-
 function GBRIHCappCheck(){
     if  [ -e "$(echo "$GBRIHCapp" | cut -d '|' -f2)" ]; then
         dialog_command "listitem: $(echo "$GBRIHCapp" | cut -d '|' -f1): success"
     else
         dialog_command "listitem: title: $(echo "$GBRIHCapp" | cut -d '|' -f1), status: fail, statustext: Failed"
+    fi
+    dialog_command "progress: increment"
+}
+
+function USAMHNJappCheck(){
+    if  [ -e "$(echo "$USAMHNJapp" | cut -d '|' -f2)" ]; then
+        dialog_command "listitem: $(echo "$USAMHNJapp" | cut -d '|' -f1): success"
+    else
+        dialog_command "listitem: title: $(echo "$USAMHNJapp" | cut -d '|' -f1), status: fail, statustext: Failed"
     fi
     dialog_command "progress: increment"
 }
@@ -382,6 +449,16 @@ done
 PPYFCRlistitems=""
 for PPYFCRapp in "${PPYFCRapp[@]}"; do
   PPYFCRlistitems="$PPYFCRlistitems --listitem '$(echo "$PPYFCRapp" | cut -d '|' -f1)'"
+done
+
+USAMHNJlistitems=""
+for USAMHNJapp in "${USAMHNJapp[@]}"; do
+  USAMHNJlistitems="$USAMHNJlistitems --listitem '$(echo "$USAMHNJapp" | cut -d '|' -f1)'"
+done
+
+GBRIHClistitems=""
+for GBRIHCapp in "${GBRIHCapp[@]}"; do
+  GBRIHClistitems="$GBRIHClistitems --listitem '$(echo "$GBRIHCapp" | cut -d '|' -f1)'"
 done
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # Start of Proccess
@@ -458,7 +535,7 @@ case "$SELECTION" in
 
     wait)
 
-    finalise
+    finaliseNYCART
    ;;
    "NYC-SRX") echo "Starting Image Proccess for NYC-SRX" 
         dialog -t  --title "$ORG_NAME"  --alignment "center"  --centericon true  --iconsize "250"  --messagefont size=16,bold  --icon "$ICON_LOGO"  --button1text Start --message  "$NYCSRXMESSAGE"
@@ -563,7 +640,7 @@ case "$SELECTION" in
 
     wait)
 
-    finalise
+    finalisePPYFCR
    ;;
    "GBR-IHC") echo "Starting Image Proccess for GBR-IHC" 
         dialog -t  --title "$ORG_NAME"  --alignment "center"  --centericon true  --iconsize "250"  --messagefont size=16,bold  --icon "$ICON_LOGO"  --button1text Start --message  "$GBRIHCMESSAGE"
@@ -593,6 +670,41 @@ case "$SELECTION" in
         dialog_command "listitem: title: $(echo "$GBRIHCapp" | cut -d '|' -f1), status: pending, statustext: Installing"
         dialog_command "progresstext: Installing $(echo "$app" | cut -d '|' -f1) … this will take some time"
         /usr/local/bin/jamf policy -event "$(echo "$GBRIHCapp" | cut -d '|' -f3 )" -verbose
+        appCheck &
+    done
+
+    wait)
+
+    finalise
+   ;;
+   "USA-MHNJ") echo "Starting Image Proccess for USA-MHNJ" 
+        dialog -t  --title "$ORG_NAME"  --alignment "center"  --centericon true  --iconsize "250"  --messagefont size=16,bold  --icon "$ICON_LOGO"  --button1text Start --message  "$GBRIHCMESSAGE"
+        dialogCMD="$dialog -p --title \"${ORG_NAME}\" \
+                --message \"${START_MESSAGE}\" \
+                --icon \"$ICON_LOGO\" \
+                --progress $progress_total \
+                --background \"${BACKGROUND_IMAGE}\" \
+                --button1text \"Please Wait\" \
+                --button1disabled \
+                --ontop \
+                --"$USAMHNJlistitems" \
+                --overlayicon \"$overlayicon\" \
+                --titlefont 'size=28' \
+                --messagefont 'size=14' \
+                --quitkey b"
+
+        eval "$dialogCMD" &
+            sleep 2
+            
+    for USAMHNJapp in "${USAMHNJapp[@]}"; do
+        dialog_command "listitem: title: $(echo "$GBRIHCapp" | cut -d '|' -f1), status: wait, statustext: Pending"
+    done
+
+    (for USAMHNJapp in "${USAMHNJapp[@]}"; do
+        dialog_command "icon: https://ics.services.jamfcloud.com/icon/hash_$(echo "$USAMHNJapp" | cut -d '|' -f4)"
+        dialog_command "listitem: title: $(echo "$USAMHNJapp" | cut -d '|' -f1), status: pending, statustext: Installing"
+        dialog_command "progresstext: Installing $(echo "$app" | cut -d '|' -f1) … this will take some time"
+        /usr/local/bin/jamf policy -event "$(echo "$USAMHNJapp" | cut -d '|' -f3 )" -verbose
         appCheck &
     done
 
