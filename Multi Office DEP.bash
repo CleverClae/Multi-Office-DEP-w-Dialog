@@ -119,7 +119,7 @@ apps=(
 	"Global Protect|/Applications/GlobalProtect.app|NYC-FHC-Install_GlobalProtectVPN5210|27586f39b50ba6722b5abff7dce6e4c0b10b5051e13eb710407f885cdf346f8a"
 	"Google Chrome|/Applications/Google Chrome.app|NYC-FHC-Install-Chrome|9fa3f95e040d299a5fad28bb0d6c57a528bb8f0c9e775b0ecb830db5520e6d96"
 	"Adobe Creative Cloud 2022|/Applications/Adobe XD/Adobe XD.app|NYC-FHC-Creative-Cloud|4f9a4f79d648e6a1850137e0444be39d8c17974dcfbbc370d41d4ffcd04926cc"
-	"Microsoft Edge|/Applications/Microsoft Edge.app|NYC-FHC-Install-MSEdge|98d4083f89e73d57866a6c790319050618d3fefbf851d0bc138ac9b4a55c67f7"
+	"Microsoft Edge|/Applications/Microsoft Edge.app|NYC-FHC-Install_MSEdge|98d4083f89e73d57866a6c790319050618d3fefbf851d0bc138ac9b4a55c67f7"
 	"Microsoft Office 365|/Applications/Microsoft Teams.app|NYC-FHC-Install-Microsoft-Office|87f928080750588fa45de036f09fabc907da65cf021b7ac4a3d2f037bda3568f"
 	"Zoom|/Applications/zoom.us.app|NYC-FHC-Install_Zoom|90b660d090af165e0169f8ea56b65537c09aedac635aec93896fdba9bdb4924a"
 	"Universal Type Client|/Applications/Universal Type Client.app|NYC-FHC-UTC|332afa05a467635545d1af7cf9cdfa3f680fb620b23ba5f1900412de08b8c2c2"
@@ -128,8 +128,7 @@ apps=(
     "SafeQ 6|/Applications/Xerox PowerENGAGE.app|NYC-FHC-Safeq|6e3576dc7c9839246ac66380898d03b2d310d639e24e60202de4bd0f9e1f3326"
     "FCB Servers|/Applications/FCB Servers|NYC-FHC-fcbservers|d8b04640d60be03ea939dbbce9a175505f5a73ac216dbe94d62cbaf37fb1a389"
     "FCB Fonts|/Library/Fonts/Rockwell.ttf|NYC-FHC-fonts|010c77e70d7c8d33a47e100b5eb62cad0dd293f0f98147c9c48e246ce652a651"
-	"FCB Templates|/Users/"${currentUser}"/Library/Group Containers/UBF8T346G9.Office/User Content.localized|NYC-FHC-FCBTEMPLATES|1fd01cb7e49863d8987a4a93904ba3c196c109f6f47a3df109fb16fa8ce6cee1"
-	
+	"FCB Templates|/Users/"${currentUser}"/Library/Group Containers/UBF8T346G9.Office/User Content.localized|NYC-FHC-FCBTEMPLATES|1fd01cb7e49863d8987a4a93904ba3c196c109f6f47a3df109fb16fa8ce6cee1"	
 )
 NYCARTapp=(
 	"Global Protect|/Applications/GlobalProtect.app|NYC-ART-Install_GlobalProtectVPN5210|27586f39b50ba6722b5abff7dce6e4c0b10b5051e13eb710407f885cdf346f8a"
@@ -150,16 +149,22 @@ NYCARTapp=(
 	"FCB Templates|/Users/"${currentUser}"/Library/Group Containers/UBF8T346G9.Office/User Content.localized|NYC-ART-FCBTEMPLATES|1fd01cb7e49863d8987a4a93904ba3c196c109f6f47a3df109fb16fa8ce6cee1"
 )
 NYCSRXapp=(
-	"Global Protect|/Applications/GlobalProtect.app|NYC-FHC-Install_GlobalProtectVPN5210|27586f39b50ba6722b5abff7dce6e4c0b10b5051e13eb710407f885cdf346f8a"
-	"Google Chrome|/Applications/Google Chrome.app|NYC-FHC-Install-Chrome|9fa3f95e040d299a5fad28bb0d6c57a528bb8f0c9e775b0ecb830db5520e6d96"
-	"Adobe Creative Cloud 2022|/Applications/Adobe XD/Adobe XD.app|NYC-FHC-Creative-Cloud|4f9a4f79d648e6a1850137e0444be39d8c17974dcfbbc370d41d4ffcd04926cc"
-	"Microsoft Edge|/Applications/Microsoft Edge.app|NYC-FHC-Install_MSEdge|98d4083f89e73d57866a6c790319050618d3fefbf851d0bc138ac9b4a55c67f7"
-	"Microsoft Office 365|/Applications/Microsoft Teams.app|NYC-FHC-Install-Microsoft-Office|87f928080750588fa45de036f09fabc907da65cf021b7ac4a3d2f037bda3568f"
-	"Zoom|/Applications/zoom.us.app|NYC-FHC-Install_Zoom|90b660d090af165e0169f8ea56b65537c09aedac635aec93896fdba9bdb4924a"
-	"Universal Type Client|/Applications/Universal Type Client.app|NYC-FHC-UTC|332afa05a467635545d1af7cf9cdfa3f680fb620b23ba5f1900412de08b8c2c2"
-	"VLC Player|/Applications/VLC.app|NYC-FHC-Install-VLC|c046a7faca2942b2826d24a7b03caefd775bd4c8aab6ce6fc9e714718d62cb63"
-	"Teamviewer|/Applications/TeamViewerHost.app|NYC-FHC-teamviewer|117f2cd110bdc3e536cfa15679700fb6eb54c01306c0feeedea7064f82bb3a82"
-	### ADD FCB TEMPLATES ### NEED FILE LOCATION FOR APP CHECK FUNCTION ######
+	"Global Protect|/Applications/GlobalProtect.app|vpn|27586f39b50ba6722b5abff7dce6e4c0b10b5051e13eb710407f885cdf346f8a"
+	"Google Chrome|/Applications/Google Chrome.app|googlechrome|9fa3f95e040d299a5fad28bb0d6c57a528bb8f0c9e775b0ecb830db5520e6d96"
+    "Adobe Acrobat DC|/Applications/Adobe Acrobat DC/Adobe Acrobat.app|acrobat|3f3fd1622e880679a8ee52952cb66a92cf351d853b26112709a080897332e008"
+    "Adobe Photoshop|/Applications/Adobe Photoshop 2022/Adobe Photoshop 2022.app|photoshop|f697f20019867ad4e9bbfad180105a3c2252ec570fbb607abbdba6c51cad311d"
+    "Adobe Illustrator|/Applications/Adobe Illustrator 2022/Adobe Illustrator.app|illus|7a98c9efc026a8059df5532af122d5023c95d61c91b122ea79d8a1663b7ee122"
+    "Adobe InDesign|/Applications/Adobe InDesign 2022/Adobe InDesign 2022.app|InDesign|544983f931e095f1719cda656835aadd843426a66f63070a572a7a71ead52556"
+    "Adobe Bridge|/Applications/Adobe Bridge 2022/Adobe Bridge 2022.app|Bridge|3a9ca528d5c1c20ac31f0b9e106249467e2208707444ba2f6152ddda346c5afe"
+	"Microsoft Office 365|/Applications/Microsoft Teams.app|Office365|87f928080750588fa45de036f09fabc907da65cf021b7ac4a3d2f037bda3568f"
+	"Zoom|/Applications/zoom.us.app|zoom|90b660d090af165e0169f8ea56b65537c09aedac635aec93896fdba9bdb4924a"
+	"Universal Type Client|/Applications/Universal Type Client.app|UTC|332afa05a467635545d1af7cf9cdfa3f680fb620b23ba5f1900412de08b8c2c2"
+	"VLC Player|/Applications/VLC.app|vlc|c046a7faca2942b2826d24a7b03caefd775bd4c8aab6ce6fc9e714718d62cb63"
+	"Teamviewer|/Applications/TeamViewerHost.app|TeamViewer|117f2cd110bdc3e536cfa15679700fb6eb54c01306c0feeedea7064f82bb3a82"
+    "SafeQ 6|/Applications/Xerox PowerENGAGE.app|safeq|6e3576dc7c9839246ac66380898d03b2d310d639e24e60202de4bd0f9e1f3326"
+    "FCB Servers|/Applications/FCB Servers|fcbservers|d8b04640d60be03ea939dbbce9a175505f5a73ac216dbe94d62cbaf37fb1a389"
+    "FCB Fonts|/Library/Fonts/Rockwell.ttf|fonts|010c77e70d7c8d33a47e100b5eb62cad0dd293f0f98147c9c48e246ce652a651"
+	"FCB Templates|/Users/"${currentUser}"/Library/Group Containers/UBF8T346G9.Office/User Content.localized|FCBTEMPLATES|1fd01cb7e49863d8987a4a93904ba3c196c109f6f47a3df109fb16fa8ce6cee1"
 )
 NYCNEOapp=(
     "Global Protect|/Applications/GlobalProtect.app|NYC-NEO-vpn|27586f39b50ba6722b5abff7dce6e4c0b10b5051e13eb710407f885cdf346f8a"
@@ -355,6 +360,25 @@ function finalisePPYFCR(){
   $JAMFCOMMAND smbfix
   $JAMFCOMMAND config
   $JAMFCOMMAND name
+  $JAMFCOMMAND CheckIn
+  dialog_command "icon: SF=checkmark.seal.fill,weight=bold,colour1=#00ff44,colour2=#075c1e"
+  dialog_command "progresstext: Complete"
+  dialog_command "progress: complete"
+  dialog_command "button1text: Done"
+  dialog_command "button1: enable"
+  exit 0
+}
+function finaliseNYCSRX(){
+  dialog_command "icon: SF=checkmark.circle.fill,weight=bold,colour1=#00ff44,colour2=#075c1e"
+  dialog_command "progresstext: Installation of applications complete."
+  sleep 5
+  dialog_command "icon: https://ics.services.jamfcloud.com/icon/hash_90958d0e1f8f8287a86a1198d21cded84eeea44886df2b3357d909fe2e6f1296"
+  dialog_command "progresstext: Proccessing final Configurations …"
+  $JAMFCOMMAND NYC-SRX-InstallRosetta2
+  $JAMFCOMMAND NYC-SRX-Install-QualysAgent
+  $JAMFCOMMAND SRXNAME
+  $JAMFCOMMAND smbfix
+  $JAMFCOMMAND enrolldock
   $JAMFCOMMAND CheckIn
   dialog_command "icon: SF=checkmark.seal.fill,weight=bold,colour1=#00ff44,colour2=#075c1e"
   dialog_command "progresstext: Complete"
@@ -579,7 +603,7 @@ case "$SELECTION" in
 
     wait)
 
-    finalise
+    finaliseNYCSRX
    ;;
    "NYC-NEO") echo "Starting Image Proccess for NYC-NEO" 
         dialog -t  --title "$ORG_NAME"  --alignment "center"  --centericon true  --iconsize "250"  --messagefont size=16,bold  --icon "$ICON_LOGO"  --button1text Start --message  "$NYCNEOMESSAGE"
