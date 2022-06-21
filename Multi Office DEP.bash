@@ -116,7 +116,7 @@ currentUser=$(scutil <<< "show State:/Users/ConsoleUser" | awk '/Name :/ && ! /l
 #Change -f3 for specific office 
 
 apps=(
-	"Global Protect|/Applications/GlobalProtect.app|NYC-FHC-Install_GlobalProtectVPN5210|27586f39b50ba6722b5abff7dce6e4c0b10b5051e13eb710407f885cdf346f8a"
+	
 	"Google Chrome|/Applications/Google Chrome.app|NYC-FHC-Install-Chrome|9fa3f95e040d299a5fad28bb0d6c57a528bb8f0c9e775b0ecb830db5520e6d96"
 	"Adobe Creative Cloud 2022|/Applications/Adobe XD/Adobe XD.app|NYC-FHC-Creative-Cloud|4f9a4f79d648e6a1850137e0444be39d8c17974dcfbbc370d41d4ffcd04926cc"
 	"Microsoft Edge|/Applications/Microsoft Edge.app|NYC-FHC-Install_MSEdge|98d4083f89e73d57866a6c790319050618d3fefbf851d0bc138ac9b4a55c67f7"
@@ -124,10 +124,11 @@ apps=(
 	"Zoom|/Applications/zoom.us.app|NYC-FHC-Install_Zoom|90b660d090af165e0169f8ea56b65537c09aedac635aec93896fdba9bdb4924a"
 	"Universal Type Client|/Applications/Universal Type Client.app|NYC-FHC-UTC|332afa05a467635545d1af7cf9cdfa3f680fb620b23ba5f1900412de08b8c2c2"
 	"VLC Player|/Applications/VLC.app|NYC-FHC-Install-VLC|c046a7faca2942b2826d24a7b03caefd775bd4c8aab6ce6fc9e714718d62cb63"
-	"Teamviewer|/Applications/TeamViewerHost.app|NYC-FHC-teamviewer|117f2cd110bdc3e536cfa15679700fb6eb54c01306c0feeedea7064f82bb3a82"
     "SafeQ 6|/Applications/Xerox PowerENGAGE.app|NYC-FHC-Safeq|6e3576dc7c9839246ac66380898d03b2d310d639e24e60202de4bd0f9e1f3326"
     "FCB Servers|/Applications/FCB Servers|NYC-FHC-fcbservers|d8b04640d60be03ea939dbbce9a175505f5a73ac216dbe94d62cbaf37fb1a389"
     "FCB Fonts|/Library/Fonts/Rockwell.ttf|NYC-FHC-fonts|010c77e70d7c8d33a47e100b5eb62cad0dd293f0f98147c9c48e246ce652a651"
+    "Global Protect|/Applications/GlobalProtect.app|NYC-FHC-Install_GlobalProtectVPN5210|27586f39b50ba6722b5abff7dce6e4c0b10b5051e13eb710407f885cdf346f8a"
+    "Teamviewer|/Applications/TeamViewerHost.app|NYC-FHC-teamviewer|117f2cd110bdc3e536cfa15679700fb6eb54c01306c0feeedea7064f82bb3a82"
 	"FCB Templates|/Users/"${currentUser}"/Library/Group Containers/UBF8T346G9.Office/User Content.localized|NYC-FHC-FCBTEMPLATES|1fd01cb7e49863d8987a4a93904ba3c196c109f6f47a3df109fb16fa8ce6cee1"	
 )
 NYCARTapp=(
@@ -323,8 +324,7 @@ runDialog () {
             --selectdefault NYC-FHC \
             --button1text Start \
             --button2text Cancel \
-            --button2action "exit 0" \
-           
+            --button2action "exit 0" \         
 }
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
