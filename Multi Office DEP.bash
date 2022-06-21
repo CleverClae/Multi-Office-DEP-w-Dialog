@@ -217,6 +217,24 @@ USAMHNJapps=(
 	"VLC Player|/Applications/VLC.app|USA-MHNJ-Install-VLC|c046a7faca2942b2826d24a7b03caefd775bd4c8aab6ce6fc9e714718d62cb63"
 	"Teamviewer|/Applications/TeamViewerHost.app|USA-MHNJ-Install_teamviewerqs|117f2cd110bdc3e536cfa15679700fb6eb54c01306c0feeedea7064f82bb3a82"
 )
+NYCMHNYapps=(
+	"Global Protect|/Applications/GlobalProtect.app|USA-MHNJ-Install-GlobalProtectVPN|27586f39b50ba6722b5abff7dce6e4c0b10b5051e13eb710407f885cdf346f8a"  
+	"Adobe Creative Cloud 2022|/Applications/Adobe XD/Adobe XD.app|USA-MHNJ-Install-CCDesktopApp|4f9a4f79d648e6a1850137e0444be39d8c17974dcfbbc370d41d4ffcd04926cc"
+	"Microsoft Office 365|/Applications/Microsoft Teams.app|USA-MHNJ-Install-Microsoft-Office-Business-Pro|87f928080750588fa45de036f09fabc907da65cf021b7ac4a3d2f037bda3568f"
+	"Zoom|/Applications/zoom.us.app|USA-MHNJ-Install_Zoom|90b660d090af165e0169f8ea56b65537c09aedac635aec93896fdba9bdb4924a"
+	"Universal Type Client|/Applications/Universal Type Client.app|USA-MHNJ-Install-UTC|332afa05a467635545d1af7cf9cdfa3f680fb620b23ba5f1900412de08b8c2c2"
+	"VLC Player|/Applications/VLC.app|USA-MHNJ-Install-VLC|c046a7faca2942b2826d24a7b03caefd775bd4c8aab6ce6fc9e714718d62cb63"
+	"Teamviewer|/Applications/TeamViewerHost.app|USA-MHNJ-Install_teamviewerqs|117f2cd110bdc3e536cfa15679700fb6eb54c01306c0feeedea7064f82bb3a82"
+)
+SPLIHCapps=(
+	"Global Protect|/Applications/GlobalProtect.app|USA-MHNJ-Install-GlobalProtectVPN|27586f39b50ba6722b5abff7dce6e4c0b10b5051e13eb710407f885cdf346f8a"  
+	"Adobe Creative Cloud 2022|/Applications/Adobe XD/Adobe XD.app|USA-MHNJ-Install-CCDesktopApp|4f9a4f79d648e6a1850137e0444be39d8c17974dcfbbc370d41d4ffcd04926cc"
+	"Microsoft Office 365|/Applications/Microsoft Teams.app|USA-MHNJ-Install-Microsoft-Office-Business-Pro|87f928080750588fa45de036f09fabc907da65cf021b7ac4a3d2f037bda3568f"
+	"Zoom|/Applications/zoom.us.app|USA-MHNJ-Install_Zoom|90b660d090af165e0169f8ea56b65537c09aedac635aec93896fdba9bdb4924a"
+	"Universal Type Client|/Applications/Universal Type Client.app|USA-MHNJ-Install-UTC|332afa05a467635545d1af7cf9cdfa3f680fb620b23ba5f1900412de08b8c2c2"
+	"VLC Player|/Applications/VLC.app|USA-MHNJ-Install-VLC|c046a7faca2942b2826d24a7b03caefd775bd4c8aab6ce6fc9e714718d62cb63"
+	"Teamviewer|/Applications/TeamViewerHost.app|USA-MHNJ-Install_teamviewerqs|117f2cd110bdc3e536cfa15679700fb6eb54c01306c0feeedea7064f82bb3a82"
+)
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # Site Variables
@@ -271,6 +289,21 @@ This Proccess can take anywhere from 35 - 45 min to complete
 Please be patient...
 "
 
+NYCMNHYMESSAGE="Starting Image Proccess for NYC-MNHY 
+
+This Proccess can take anywhere from 35 - 45 min to complete
+
+Please be patient...
+"
+
+SPLIHCMESSAGE="Starting Image Proccess for SPL-IHC 
+
+This Proccess can take anywhere from 35 - 45 min to complete
+
+Please be patient...
+"
+
+
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # Initial Dialog Window 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
@@ -285,7 +318,7 @@ runDialog () {
             --background "$BACKGROUND_IMAGE" \
             --icon '/Library/Application Support/JAMF/Jamf.app/Contents/Resources/AppIcon.icns' \
             --message  "Please select your site to begin Imaging" bold \
-            --selectvalues NYC-FHC,NYC-ART,NYC-SRX,NYC-NEO,PPY-FCR,GRB-IHC,NYC-MHNY,USA-MHNJ \
+            --selectvalues NYC-FHC,NYC-ART,NYC-SRX,NYC-NEO,PPY-FCR,GRB-IHC,NYC-MHNY,USA-MHNJ,SPL-IHC \
             --selecttitle "Select Your Office" \
             --selectdefault NYC-FHC \
             --button1text Start \
@@ -455,6 +488,23 @@ function USAMHNJappCheck(){
     dialog_command "progress: increment"
 }
 
+function NYCMHNYappCheck(){
+    if  [ -e "$(echo "$NYCMHNYapp" | cut -d '|' -f2)" ]; then
+        dialog_command "listitem: $(echo "$NYCMHNYapp" | cut -d '|' -f1): success"
+    else
+        dialog_command "listitem: title: $(echo "$NYCMHNYapp" | cut -d '|' -f1), status: fail, statustext: Failed"
+    fi
+    dialog_command "progress: increment"
+}
+
+function SPLIHCappCheck(){
+    if  [ -e "$(echo "$SPLIHCapp" | cut -d '|' -f2)" ]; then
+        dialog_command "listitem: $(echo "$SPLIHCapp" | cut -d '|' -f1): success"
+    else
+        dialog_command "listitem: title: $(echo "$SPLIHCapp" | cut -d '|' -f1), status: fail, statustext: Failed"
+    fi
+    dialog_command "progress: increment"
+}
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # Create the list of apps
@@ -489,9 +539,19 @@ for USAMHNJapp in "${USAMHNJapp[@]}"; do
   USAMHNJlistitems="$USAMHNJlistitems --listitem '$(echo "$USAMHNJapp" | cut -d '|' -f1)'"
 done
 
+NYCMHNYlistitems=""
+for  NYCMHNYapp in "${NYCMHNYapp[@]}"; do
+   NYCMHNYlistitems="$ NYCMHNYlistitems --listitem '$(echo "$NYCMHNYapp" | cut -d '|' -f1)'"
+done
+
 GBRIHClistitems=""
 for GBRIHCapp in "${GBRIHCapp[@]}"; do
   GBRIHClistitems="$GBRIHClistitems --listitem '$(echo "$GBRIHCapp" | cut -d '|' -f1)'"
+done
+
+SPLIHClistitems=""
+for SPLIHCapp in "${SPLIHCapp[@]}"; do
+  SPLIHClistitems="$SPLIHClistitems --listitem '$(echo "$SPLIHCapp" | cut -d '|' -f1)'"
 done
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
@@ -702,14 +762,14 @@ case "$SELECTION" in
     (for GBRIHCapp in "${GBRIHCapp[@]}"; do
         dialog_command "icon: https://ics.services.jamfcloud.com/icon/hash_$(echo "$GBRIHCapp" | cut -d '|' -f4)"
         dialog_command "listitem: title: $(echo "$GBRIHCapp" | cut -d '|' -f1), status: pending, statustext: Installing"
-        dialog_command "progresstext: Installing $(echo "$app" | cut -d '|' -f1) … this will take some time"
+        dialog_command "progresstext: Installing $(echo "$GBRIHCapp" | cut -d '|' -f1) … this will take some time"
         /usr/local/bin/jamf policy -event "$(echo "$GBRIHCapp" | cut -d '|' -f3 )" -verbose
         appCheck &
     done
 
     wait)
 
-    finalise
+    GBRIHCfinalise
    ;;
    "USA-MHNJ") echo "Starting Image Proccess for USA-MHNJ" 
         dialog -t  --title "$ORG_NAME"  --alignment "center"  --centericon true  --iconsize "250"  --messagefont size=16,bold  --icon "$ICON_LOGO"  --button1text Start --message  "$GBRIHCMESSAGE"
@@ -737,14 +797,84 @@ case "$SELECTION" in
     (for USAMHNJapp in "${USAMHNJapp[@]}"; do
         dialog_command "icon: https://ics.services.jamfcloud.com/icon/hash_$(echo "$USAMHNJapp" | cut -d '|' -f4)"
         dialog_command "listitem: title: $(echo "$USAMHNJapp" | cut -d '|' -f1), status: pending, statustext: Installing"
-        dialog_command "progresstext: Installing $(echo "$app" | cut -d '|' -f1) … this will take some time"
+        dialog_command "progresstext: Installing $(echo "$USAMHNJapp" | cut -d '|' -f1) … this will take some time"
         /usr/local/bin/jamf policy -event "$(echo "$USAMHNJapp" | cut -d '|' -f3 )" -verbose
         appCheck &
     done
 
     wait)
 
-    finalise
+    USAMHNJfinalise
+   ;;
+   "NYC-MHNY") echo "Starting Image Proccess for NYC-MHNY" 
+        dialog -t  --title "$ORG_NAME"  --alignment "center"  --centericon true  --iconsize "250"  --messagefont size=16,bold  --icon "$ICON_LOGO"  --button1text Start --message  "$GBRIHCMESSAGE"
+        dialogCMD="$dialog -p --title \"${ORG_NAME}\" \
+                --message \"${START_MESSAGE}\" \
+                --icon \"$ICON_LOGO\" \
+                --progress $progress_total \
+                --background \"${BACKGROUND_IMAGE}\" \
+                --button1text \"Please Wait\" \
+                --button1disabled \
+                --ontop \
+                --"$NYCMHNYlistitems" \
+                --overlayicon \"$overlayicon\" \
+                --titlefont 'size=28' \
+                --messagefont 'size=14' \
+                --quitkey b"
+
+        eval "$dialogCMD" &
+            sleep 2
+            
+    for NYCMHNYapp in "${NYCMHNYapp[@]}"; do
+        dialog_command "listitem: title: $(echo "$NYCMHNYapp" | cut -d '|' -f1), status: wait, statustext: Pending"
+    done
+
+    (for NYCMHNYapp in "${NYCMHNYapp[@]}"; do
+        dialog_command "icon: https://ics.services.jamfcloud.com/icon/hash_$(echo "$NYCMHNYapp" | cut -d '|' -f4)"
+        dialog_command "listitem: title: $(echo "$NYCMHNYapp" | cut -d '|' -f1), status: pending, statustext: Installing"
+        dialog_command "progresstext: Installing $(echo "$NYCMHNYapp" | cut -d '|' -f1) … this will take some time"
+        /usr/local/bin/jamf policy -event "$(echo "$NYCMHNYapp" | cut -d '|' -f3 )" -verbose
+        appCheck &
+    done
+
+    wait)
+
+    NYCMHNYfinalise
+   ;;
+   "SPL-IHC") echo "Starting Image Proccess for SPL-IHC" 
+        dialog -t  --title "$ORG_NAME"  --alignment "center"  --centericon true  --iconsize "250"  --messagefont size=16,bold  --icon "$ICON_LOGO"  --button1text Start --message  "$SPLIHCMESSAGE"
+        dialogCMD="$dialog -p --title \"${ORG_NAME}\" \
+                --message \"${START_MESSAGE}\" \
+                --icon \"$ICON_LOGO\" \
+                --progress $progress_total \
+                --background \"${BACKGROUND_IMAGE}\" \
+                --button1text \"Please Wait\" \
+                --button1disabled \
+                --ontop \
+                --"$SPLIHClistitems" \
+                --overlayicon \"$overlayicon\" \
+                --titlefont 'size=28' \
+                --messagefont 'size=14' \
+                --quitkey b"
+
+        eval "$dialogCMD" &
+            sleep 2
+            
+    for SPLIHCapp in "${SPLIHCapp[@]}"; do
+        dialog_command "listitem: title: $(echo "$SPLIHCapp" | cut -d '|' -f1), status: wait, statustext: Pending"
+    done
+
+    (for SPLIHCapp in "${SPLIHCapp[@]}"; do
+        dialog_command "icon: https://ics.services.jamfcloud.com/icon/hash_$(echo "$SPLIHCapp" | cut -d '|' -f4)"
+        dialog_command "listitem: title: $(echo "$SPLIHCapp" | cut -d '|' -f1), status: pending, statustext: Installing"
+        dialog_command "progresstext: Installing $(echo "$SPLIHCapp" | cut -d '|' -f1) … this will take some time"
+        /usr/local/bin/jamf policy -event "$(echo "$SPLIHCapp" | cut -d '|' -f3 )" -verbose
+        SPLIHCappCheck &
+    done
+
+    wait)
+
+    SPLIHCfinalise
    ;;
 
 esac
