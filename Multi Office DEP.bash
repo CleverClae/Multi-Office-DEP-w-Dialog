@@ -219,14 +219,17 @@ USAMHNJapps=(
 	"Teamviewer|/Applications/TeamViewerHost.app|USA-MHNJ-Install_teamviewerqs|117f2cd110bdc3e536cfa15679700fb6eb54c01306c0feeedea7064f82bb3a82"
 )
 NYCMHNYapps=(
-	"Global Protect|/Applications/GlobalProtect.app|USA-MHNJ-Install-GlobalProtectVPN|27586f39b50ba6722b5abff7dce6e4c0b10b5051e13eb710407f885cdf346f8a"  
-	"Adobe Creative Cloud 2022|/Applications/Adobe XD/Adobe XD.app|USA-MHNJ-Install-CCDesktopApp|4f9a4f79d648e6a1850137e0444be39d8c17974dcfbbc370d41d4ffcd04926cc"
-	"Microsoft Office 365|/Applications/Microsoft Teams.app|USA-MHNJ-Install-Microsoft-Office-Business-Pro|87f928080750588fa45de036f09fabc907da65cf021b7ac4a3d2f037bda3568f"
-	"Zoom|/Applications/zoom.us.app|USA-MHNJ-Install_Zoom|90b660d090af165e0169f8ea56b65537c09aedac635aec93896fdba9bdb4924a"
-	"Universal Type Client|/Applications/Universal Type Client.app|USA-MHNJ-Install-UTC|332afa05a467635545d1af7cf9cdfa3f680fb620b23ba5f1900412de08b8c2c2"
-	"VLC Player|/Applications/VLC.app|USA-MHNJ-Install-VLC|c046a7faca2942b2826d24a7b03caefd775bd4c8aab6ce6fc9e714718d62cb63"
-	"Teamviewer|/Applications/TeamViewerHost.app|USA-MHNJ-Install_teamviewerqs|117f2cd110bdc3e536cfa15679700fb6eb54c01306c0feeedea7064f82bb3a82"
+	"Global Protect|/Applications/GlobalProtect.app|NYC-MHNY-Install-GlobalProtectVPN524|27586f39b50ba6722b5abff7dce6e4c0b10b5051e13eb710407f885cdf346f8a"
+	"Google Chrome|/Applications/Google Chrome.app|NYC-ART-Install-Chrome|9fa3f95e040d299a5fad28bb0d6c57a528bb8f0c9e775b0ecb830db5520e6d96"
+    "Mozilla FireFox|/Applications/Firefox.app|NYC-MHNY-Install-Firefox|9fa3f95e040d299a5fad28bb0d6c57a528bb8f0c9e775b0ecb830db5520e6d96"
+    "Universal Type Client|/Applications/Universal Type Client.app|NYC-MHNY-Install-UTC|332afa05a467635545d1af7cf9cdfa3f680fb620b23ba5f1900412de08b8c2c2"
+    "Zoom|/Applications/zoom.us.app|NYC-MHNY-Install_Zoom|90b660d090af165e0169f8ea56b65537c09aedac635aec93896fdba9bdb4924a"
+    "Egnyte|/Applications/Egnyte.app|NYC-MHNY-Install_egnyte|71237ff576fd610192cd8bcbff9af02fc0d385c6e296e4ae869e15da9a6215fc"
+	"Adobe Creative Cloud 2022|/Applications/Adobe Creative Cloud/Adobe Creative Cloud|NYC-MHNY-Install-CCDesktopApp|4f9a4f79d648e6a1850137e0444be39d8c17974dcfbbc370d41d4ffcd04926cc"
+    "Adobe DC|/Applications/Adobe Acrobat DC/Adobe Acrobat.app|NYC-MHNY-Install-adobedc|3f3fd1622e880679a8ee52952cb66a92cf351d853b26112709a080897332e008"
+	"Microsoft Office 365|/Applications/Microsoft Teams.app|NYC-MHNY-Install-Microsoft-Office-Business-Pro|87f928080750588fa45de036f09fabc907da65cf021b7ac4a3d2f037bda3568f"
 )
+
 SPLIHCapps=(
 	"Global Protect|/Applications/GlobalProtect.app|USA-MHNJ-Install-GlobalProtectVPN|27586f39b50ba6722b5abff7dce6e4c0b10b5051e13eb710407f885cdf346f8a"  
 	"Adobe Creative Cloud 2022|/Applications/Adobe XD/Adobe XD.app|USA-MHNJ-Install-CCDesktopApp|4f9a4f79d648e6a1850137e0444be39d8c17974dcfbbc370d41d4ffcd04926cc"
