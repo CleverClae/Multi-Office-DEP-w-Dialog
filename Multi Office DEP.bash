@@ -103,8 +103,7 @@ currentUser=$(scutil <<< "show State:/Users/ConsoleUser" | awk '/Name :/ && ! /l
 
 siteapps=(
     "App Name for display |/Applications/location|Custom Trigger|Jamf icon Hash"
-    "App Name for display |/Applications/location|Custom Trigger|Jamf icon Hash"
-)
+    "App Name for display |/Applications/location|Custom Trigger|Jamf icon Hash")
 
 siteapps1=(
     "App Name for display |/Applications/location|Custom Trigger|Jamf icon Hash"
@@ -408,7 +407,7 @@ case "$SELECTION" in
         dialog_command "listitem: title: $(echo "$app" | cut -d '|' -f1), status: pending, statustext: Installing"
         dialog_command "progresstext: Installing $(echo "$app" | cut -d '|' -f1) … this will take some time"
         /usr/local/bin/jamf policy -event "$(echo "$app" | cut -d '|' -f3 )" -verbose
-        siteapps1Check &
+        appCheck &
     done
 
     wait)
@@ -442,7 +441,7 @@ case "$SELECTION" in
         dialog_command "listitem: title: $(echo "$app" | cut -d '|' -f1), status: pending, statustext: Installing"
         dialog_command "progresstext: Installing $(echo "$app" | cut -d '|' -f1) … this will take some time"
         /usr/local/bin/jamf policy -event "$(echo "$app" | cut -d '|' -f3 )" -verbose
-        siteapps1Check &
+        appCheck &
     done
 
     wait)
@@ -476,7 +475,7 @@ case "$SELECTION" in
         dialog_command "listitem: title: $(echo "$app" | cut -d '|' -f1), status: pending, statustext: Installing"
         dialog_command "progresstext: Installing $(echo "$app" | cut -d '|' -f1) … this will take some time"
         /usr/local/bin/jamf policy -event "$(echo "$app" | cut -d '|' -f3 )" -verbose
-        siteapps1Check &
+        appCheck &
     done
 
     wait)
@@ -510,7 +509,7 @@ case "$SELECTION" in
         dialog_command "listitem: title: $(echo "$app" | cut -d '|' -f1), status: pending, statustext: Installing"
         dialog_command "progresstext: Installing $(echo "$app" | cut -d '|' -f1) … this will take some time"
         /usr/local/bin/jamf policy -event "$(echo "$app" | cut -d '|' -f3 )" -verbose
-        siteapps1Check &
+        appCheck &
     done
 
     wait)
@@ -544,7 +543,7 @@ case "$SELECTION" in
         dialog_command "listitem: title: $(echo "$app" | cut -d '|' -f1), status: pending, statustext: Installing"
         dialog_command "progresstext: Installing $(echo "$app" | cut -d '|' -f1) … this will take some time"
         /usr/local/bin/jamf policy -event "$(echo "$app" | cut -d '|' -f3 )" -verbose
-        siteapps1Check &
+        appCheck &
     done
 
     wait)
@@ -578,7 +577,7 @@ case "$SELECTION" in
         dialog_command "listitem: title: $(echo "$app" | cut -d '|' -f1), status: pending, statustext: Installing"
         dialog_command "progresstext: Installing $(echo "$app" | cut -d '|' -f1) … this will take some time"
         /usr/local/bin/jamf policy -event "$(echo "$app" | cut -d '|' -f3 )" -verbose
-        siteapps1Check &
+        appCheck &
     done
 
     wait)
@@ -612,12 +611,12 @@ case "$SELECTION" in
         dialog_command "listitem: title: $(echo "$app" | cut -d '|' -f1), status: pending, statustext: Installing"
         dialog_command "progresstext: Installing $(echo "$app" | cut -d '|' -f1) … this will take some time"
         /usr/local/bin/jamf policy -event "$(echo "$app" | cut -d '|' -f3 )" -verbose
-        siteapps1Check &
+        appCheck &
     done
 
     wait)
 
-    site6finalise
+    finalise
    ;;
    "site8") echo "Starting Image Proccess for site8" 
         dialog -t  --title "$ORG_NAME"  --alignment "center"  --centericon true  --iconsize "250"  --messagefont size=16,bold  --icon "$ICON_LOGO"  --button1text Start --message  "$site8MESSAGE"
@@ -646,7 +645,7 @@ case "$SELECTION" in
         dialog_command "listitem: title: $(echo "$app" | cut -d '|' -f1), status: pending, statustext: Installing"
         dialog_command "progresstext: Installing $(echo "$app" | cut -d '|' -f1) … this will take some time"
         /usr/local/bin/jamf policy -event "$(echo "$app" | cut -d '|' -f3 )" -verbose
-        siteapps1Check &
+        appCheck &
     done
 
     wait)
@@ -655,7 +654,5 @@ case "$SELECTION" in
    ;;
 
 esac
-
-
 
 exit 0
