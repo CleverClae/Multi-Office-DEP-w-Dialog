@@ -299,9 +299,9 @@ for app in "${siteapps[@]}"; do
   listitems="$listitems --listitem '$(echo "$app" | cut -d '|' -f1)'"
 done
 
-site1listitems=""
-for $app in "${siteapps1[@]}"; do
-  site1listitems="$site1listitems --listitem '$(echo "$app" | cut -d '|' -f1)'"
+site1listitems=
+for app in "${siteapps1[@]}"; do
+    site1listitems="$site1listitems --listitem '$(echo "$app" | cut -d '|' -f1)'"
 done
 
 site2listitems=""
